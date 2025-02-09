@@ -21,78 +21,78 @@ import type {
 // 默认配置
 const defaultOptions: UmoEditorOptions = {
   editorKey: 'default',
-  locale: 'zh-CN',
+  locale: 'bo',
   theme: 'light',
   height: '100%',
   dicts: {
     fonts: [
       {
-        label: { en_US: 'Default Font', zh_CN: '默认字体', ru_RU: 'default' },
+        label: { en_US: 'Default Font', zh_CN: 'སྔོན་སྒྲིག་ཡིག་གཟུགས།', bo: 'སྔོན་སྒྲིག་ཡིག་གཟུགས།' },
         value: null,
       },
       {
-        label: { en_US: 'Songti', zh_CN: '宋体', ru_RU: 'Songti' },
-        value: 'SimSun',
+        label: { en_US: 'Monlam Uni OuChan2', bo: 'སྨོན་ལམ་དབུ་ཅན་གཉིས་པ།' },
+        value: 'Monlam Uni OuChan2',
       },
       {
-        label: { en_US: 'Heiti', zh_CN: '黑体', ru_RU: 'Heiti' },
-        value: 'SimHei',
+        label: { en_US: 'Monlam Uni OuChan3', bo: 'སྨོན་ལམ་དབུ་ཅན་གསུམ་པ།' },
+        value: 'Monlam Uni OuChan3',
       },
       {
-        label: { en_US: 'Kaiti', zh_CN: '楷体', ru_RU: 'Kaiti' },
-        value: 'KaiTi',
+        label: { en_US: 'Monlam Uni OuChan4', bo: 'སྨོན་ལམ་དབུ་ཅན་བཞི་བ།' },
+        value: 'Monlam Uni OuChan4',
       },
       {
-        label: {
-          en_US: 'Kaiti GB2312',
-          zh_CN: '楷体_GB2312',
-          ru_RU: 'Kaiti GB2312',
-        },
-        value: 'KaiTi_GB2312',
+        label: { en_US: 'Monlam Uni OuChan5', bo: 'སྨོན་ལམ་དབུ་ཅན་ལྔ་བ།' },
+        value: 'Monlam Uni OuChan5',
       },
       {
-        label: { en_US: 'Fangsong', zh_CN: '仿宋', ru_RU: 'Fangsong' },
-        value: 'FangSong',
+        label: { en_US: 'Qomolangma-UchenSarchen', bo: 'ཇོ་མོ་གླང་མ་དབུ་ཅན་གསར་ཆེན།' },
+        value: 'Qomolangma-UchenSarchen',
       },
       {
-        label: {
-          en_US: 'Fangsong GB2312',
-          zh_CN: '仿宋_GB2312',
-          ru_RU: 'Fangsong GB2312',
-        },
-        value: 'FangSong_GB2312',
+        label: { en_US: 'Qomolangma-UchenSarchung', bo: 'ཇོ་མོ་གླང་མ་དབུ་ཅན་གསར་ཆུང་།' },
+        value: 'Qomolangma-UchenSarchung',
       },
       {
-        label: { en_US: 'STSong', zh_CN: '华文宋体', ru_RU: 'STSong' },
-        value: 'STSong',
+        label: { en_US: 'Qomolangma-Drutsa', bo: 'ཇོ་མོ་གླང་མ་འབྲུ་ཚ།' },
+        value: 'Qomolangma-Drutsa',
       },
       {
-        label: { en_US: 'STFangsong', zh_CN: '华文仿宋', ru_RU: 'STFangsong' },
-        value: 'STFangsong',
+        label: { en_US: 'Qomolangma-Betsu', bo: 'ཇོ་མོ་གླང་མ་དཔེ་ཚུགས།' },
+        value: 'Qomolangma-Betsu',
       },
       {
-        label: {
-          en_US: 'FZ Fangsong Simplified',
-          zh_CN: '方正仿宋简体',
-          ru_RU: 'FZ Fangsong Simplified',
-        },
-        value: 'FZFangSong-Z02S',
+        label: { en_US: 'DDC Uchen', bo: 'DDC དབུ་ཅན།' },
+        value: 'DDC Uchen',
       },
       {
-        label: {
-          en_US: 'FZ Xiaobiao Song',
-          zh_CN: '方正小标宋',
-          ru_RU: 'FZ Xiaobiao Song',
-        },
-        value: 'FZXiaoBiaoSong-B05S',
+        label: { en_US: 'DDC Rinzin', bo: 'DDC རིན་ཆེན་དབུ་ཅན།' },
+        value: 'DDC Rinzin',
       },
       {
-        label: {
-          en_US: 'Microsoft Yahei',
-          zh_CN: '微软雅黑',
-          ru_RU: 'Microsoft Yahei',
-        },
-        value: 'Microsoft Yahei',
+        label: { en_US: 'Jomolhari', bo: 'ཇོ་མོ་ལྷ་རི།' },
+        value: 'Jomolhari',
+      },
+      {
+        label: { en_US: 'Noto Sans Tibetan', bo: 'Noto Sans བོད་ཡིག' },
+        value: 'Noto Sans Tibetan',
+      },
+      {
+        label: { en_US: 'Microsoft Himalaya', bo: 'Microsoft ཧི་མ་ལ་ཡ།' },
+        value: 'Microsoft Himalaya',
+      },
+      {
+        label: { en_US: 'Tibetan Machine Uni', bo: 'བོད་ཡིག་འཕྲུལ་ཆས།' },
+        value: 'Tibetan Machine Uni',
+      },
+      {
+        label: { en_US: 'MiSans Tibetan', bo: 'ཞའོ་མི་དབུ་ཅན།' },
+        value: 'MiSans Tibetan',
+      },
+      {
+        label: { en_US: 'Uchen_05', bo: 'དབུ་ཅན་༠༥' },
+        value: 'Uchen_05',
       },
       { label: 'Arial', value: 'Arial' },
       { label: 'Times New Roman', value: 'Times New Roman' },
@@ -170,32 +170,44 @@ const defaultOptions: UmoEditorOptions = {
 		],
     lineHeights: [
       {
-        label: { en_US: 'Single', zh_CN: '单倍行距', ru_RU: 'Одинарный' },
+        label: { 
+          en_US: 'Single', 
+          zh_CN: 'ཐིག་ཕྲེང་བར་ཐག་ཚད་གཅིག', 
+          bo: 'ཐིག་ཕྲེང་བར་ཐག་ཚད་གཅིག'
+        },
         value: 1,
       },
       {
         label: {
           en_US: '1.5 Line Spacing',
-          zh_CN: '1.5 倍行距',
-          ru_RU: '1.5 Межстрочных интервала',
+          zh_CN: 'ཐིག་ཕྲེང་བར་ཐག་ ༡.༥', 
+          bo: 'ཐིག་ཕྲེང་བར་ཐག་ ༡.༥'
         },
         value: 1.5,
         default: true,
       },
       {
-        label: { en_US: 'Double', zh_CN: '2 倍行距', ru_RU: 'Двойной' },
+        label: { 
+          en_US: 'Double', 
+          zh_CN: 'ཐིག་ཕྲེང་བར་ཐག་ཉིས་ལྡབ།', 
+          bo: 'ཐིག་ཕྲེང་བར་ཐག་ཉིས་ལྡབ།'
+        },
         value: 2,
       },
       {
         label: {
           en_US: '2.5 Line Spacing',
-          zh_CN: '2.5 倍行距',
-          ru_RU: '2.5 Межстрочных интервала',
+          zh_CN: 'ཐིག་ཕྲེང་བར་ཐག་ ༢.༥',
+          bo: 'ཐིག་ཕྲེང་བར་ཐག་ ༢.༥'
         },
         value: 2.5,
       },
       {
-        label: { en_US: 'Triple', zh_CN: '3 倍行距', ru_RU: 'Тройной' },
+        label: { 
+          en_US: 'Triple', 
+          zh_CN: 'ཐིག་ཕྲེང་བར་ཐག་གསུམ་ལྡབ།', 
+          bo: 'ཐིག་ཕྲེང་བར་ཐག་གསུམ་ལྡབ།'
+        },
         value: 3,
       },
     ],
@@ -203,39 +215,42 @@ const defaultOptions: UmoEditorOptions = {
       {
         label: {
           en_US: 'Plain Text',
-          zh_CN: '普通文本',
-          ru_RU: 'Простой Текст',
+          zh_CN: 'ཡིག་རྐྱང་།',
+          bo: 'ཡིག་རྐྱང་།'
         },
-        items: '‹›«»‘’“”‚„¡¿‥…‡‰‱‼⁈⁉⁇©®™§¶⁋',
+        items: '༄༅། ༄༅༅། ༅། ༆ ༇ ༈ ༉ ༊ ༎ ༏ ༐ ༑ ༒ ༔ ༴ ྅ ༠ ༡ ༢ ༣ ༤ ༥ ༦ ༧ ༨ ༩ ༪ ༫ ༬ ༭ ༮ ༯ ༰ ༱ ༲ ༳ ༵ ༶ ༷ ༸ ༹ ༺ ༻ ༼ ༽ ༾ ༿',
       },
       {
         label: {
           en_US: 'Currency Symbols',
-          zh_CN: '货币符号',
-          ru_RU: 'Символы Валют',
+          zh_CN: 'དངུལ་རྟགས།',
+          bo: 'དངུལ་རྟགས།'
         },
         items: '$€¥£¢₠₡₢₣₤¤₿₥₦₧₨₩₪₫₭₮₯₰₱₲₳₴₵₶₷₸₹₺₻₼₽',
       },
       {
         label: {
           en_US: 'Mathematical Symbols',
-          zh_CN: '数学符号',
-          ru_RU: 'Математические Символы',
+          zh_CN: 'རྩིས་རྟགས།',
+          bo: 'རྩིས་རྟགས།'
         },
-        items: '<>≤≥–—¯‾°−±÷⁄×ƒ∫∑∞√∼≅≈≠≡∈∉∋∏∧∨¬∩∪∂∀∃∅∇∗∝∠¼½¾',
+        items: '﹢﹣×÷±/=≌∽≦≧≒﹤﹥≈≡≠=≤≥<>≮≯∷∶∫∮∝∞∧∨∑∏∪∩∈∵∴⊥∥∠⌒⊙√∟⊿',
       },
       {
-        label: { en_US: 'Arrows', zh_CN: '箭头', ru_RU: 'Стрелки' },
-        items: '←→↑↓⇐⇒⇑⇓⇠⇢⇡⇣⇤⇥⤒⤓↨',
+        label: { 
+          en_US: 'Arrows', 
+          zh_CN: 'མདའ་རྟགས།', 
+          bo: 'མདའ་རྟགས།'
+        },
+        items: '↑↓←→↖↗↙↘⇧⇩⇦⇨⇄⇅↵↩↪↫↬↭↯↰↱↲↳↴↵↶↷↸↹↺↻↼↽↾↿⇀⇁⇂⇃⇞⇟⇠⇡⇢⇣',
       },
       {
         label: {
-          en_US: 'Latin Script',
-          zh_CN: '拉丁语',
-          ru_RU: 'Латинская письменность',
+          en_US: 'Tibetan Script',
+          zh_CN: 'བོད་ཡིག',
+          bo: 'བོད་ཡིག'
         },
-        items:
-          'ĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſ',
+        items: 'ཀ ཁ ག ང ཅ ཆ ཇ ཉ ཏ ཐ ད ན པ ཕ བ མ ཙ ཚ ཛ ཝ ཞ ཟ འ ཡ ར ལ ཤ ས ཧ ཨ',
       },
     ],
     emojis: [
@@ -304,8 +319,8 @@ const defaultOptions: UmoEditorOptions = {
       {
         label: {
           en_US: 'No. 5 Envelope',
-          zh_CN: '5号信封',
-          ru_RU: 'Конверт №5',
+          zh_CN: 'ཡིག་སྐོགས་ཨང་ ༥',
+          bo: 'ཡིག་སྐོགས་ཨང་ ༥'
         },
         width: 10.9,
         height: 12.9,
@@ -313,8 +328,8 @@ const defaultOptions: UmoEditorOptions = {
       {
         label: {
           en_US: 'No. 6 Envelope',
-          zh_CN: '6号信封',
-          ru_RU: 'Конверт №6',
+          zh_CN: 'ཡིག་སྐོགས་ཨང་ ༦',
+          bo: 'ཡིག་སྐོགས་ཨང་ ༦'
         },
         width: 11.9,
         height: 22.9,
@@ -322,8 +337,8 @@ const defaultOptions: UmoEditorOptions = {
       {
         label: {
           en_US: 'No. 7 Envelope',
-          zh_CN: '7号信封',
-          ru_RU: 'Конверт №7',
+          zh_CN: 'ཡིག་སྐོགས་ཨང་ ༧',
+          bo: 'ཡིག་སྐོགས་ཨང་ ༧'
         },
         width: 16.1,
         height: 22.8,
@@ -331,8 +346,8 @@ const defaultOptions: UmoEditorOptions = {
       {
         label: {
           en_US: 'No. 9 Envelope',
-          zh_CN: '9号信封',
-          ru_RU: 'Конверт №9',
+          zh_CN: 'ཡིག་སྐོགས་ཨང་ ༩',
+          bo: 'ཡིག་སྐོགས་ཨང་ ༩'
         },
         width: 22.8,
         height: 32.3,
@@ -340,8 +355,8 @@ const defaultOptions: UmoEditorOptions = {
       {
         label: {
           en_US: 'Legal Paper',
-          zh_CN: '法律用纸',
-          ru_RU: 'Юридическая бумага',
+          zh_CN: 'ཁྲིམས་ལུགས་ཤོག་བུ།',
+          bo: 'ཁྲིམས་ལུགས་ཤོག་བུ།'
         },
         width: 21.5,
         height: 33.5,
@@ -349,8 +364,8 @@ const defaultOptions: UmoEditorOptions = {
       {
         label: {
           en_US: 'Letter Paper',
-          zh_CN: '信纸',
-          ru_RU: 'Бумага для писем',
+          zh_CN: 'ཡི་གེའི་ཤོག་བུ།',
+          bo: 'ཡི་གེའི་ཤོག་བུ།'
         },
         width: 21.5,
         height: 27.9,
@@ -359,12 +374,14 @@ const defaultOptions: UmoEditorOptions = {
   },
   toolbar: {
     defaultMode: 'ribbon',
-    enableSourceEditor: false,
+    enableSourceEditor: true,
     menus: ['base', 'insert', 'table', 'tools', 'page', 'export'],
     disableMenuItems: [],
     importWord: {
       enabled: true,
-      options: {},
+      options: {
+        lang: 'bo'
+      },
       useCustomMethod: false,
     },
   },
@@ -383,7 +400,7 @@ const defaultOptions: UmoEditorOptions = {
       alpha: 0.2,
       fontColor: '#000',
       fontSize: 16,
-      fontFamily: 'SimSun',
+      fontFamily: 'Jomolhari',
       fontWeight: 'normal',
       text: '',
     },
@@ -393,19 +410,24 @@ const defaultOptions: UmoEditorOptions = {
     content: '',
     placeholder: {
       en_US: 'Please enter the document content...',
-      zh_CN: '请输入文档内容...',
-      ru_RU: 'Пожалуйста, введите содержимое документа...',
+      zh_CN: 'ཡིག་ཆའི་ནང་དོན་འཇུག་རོགས།',
+      bo: 'ཡིག་ཆའི་ནང་དོན་འཇུག་རོགས།'
     },
     enableSpellcheck: true,
     enableMarkdown: true,
     enableBubbleMenu: true,
     enableBlockMenu: true,
+    // enableComment: false,
     readOnly: false,
     autofocus: true,
     characterLimit: 0,
     typographyRules: {},
     // https://prosemirror.net/docs/ref/#view.EditorProps
-    editorProps: {},
+    editorProps: {
+      attributes: {
+        style: 'font-family: Jomolhari;'
+      }
+    },
     // https://prosemirror.net/docs/ref/#model.ParseOptions
     parseOptions: {
       preserveWhitespace: 'full',
@@ -420,63 +442,122 @@ const defaultOptions: UmoEditorOptions = {
     maxlength: 100,
     commands: [
       {
-        label: { en_US: 'Continuation', zh_CN: '续写', ru_RU: 'Продолжение' },
-        value: { en_US: 'Continuation', zh_CN: '续写', ru_RU: 'Продолжение' },
+        label: { 
+          en_US: 'Continuation', 
+          zh_CN: 'མུ་མཐུད།', 
+          bo: 'མུ་མཐུད།'
+        },
+        value: { 
+          en_US: 'Continuation', 
+          zh_CN: 'མུ་མཐུད།', 
+          bo: 'མུ་མཐུད།'
+        },
       },
       {
-        label: { en_US: 'Rewrite', zh_CN: '重写', ru_RU: 'Переписать' },
-        value: { en_US: 'Rewrite', zh_CN: '重写', ru_RU: 'Переписать' },
+        label: { 
+          en_US: 'Rewrite', 
+          zh_CN: 'བསྐྱར་བྲིས།', 
+          bo: 'བསྐྱར་བྲིས།'
+        },
+        value: { 
+          en_US: 'Rewrite', 
+          zh_CN: 'བསྐྱར་བྲིས།', 
+          bo: 'བསྐྱར་བྲིས།'
+        },
       },
       {
-        label: { en_US: 'Abbreviation', zh_CN: '缩写', ru_RU: 'Аббревиатура' },
-        value: { en_US: 'Abbreviation', zh_CN: '缩写', ru_RU: 'Аббревиатура' },
+        label: { 
+          en_US: 'Abbreviation', 
+          zh_CN: 'བསྡུས་ཡིག', 
+          bo: 'བསྡུས་ཡིག'
+        },
+        value: { 
+          en_US: 'Abbreviation', 
+          zh_CN: 'བསྡུས་ཡིག', 
+          bo: 'བསྡུས་ཡིག'
+        },
       },
       {
-        label: { en_US: 'Expansion', zh_CN: '扩写', ru_RU: 'Расширение' },
-        value: { en_US: 'Expansion', zh_CN: '扩写', ru_RU: 'Расширение' },
+        label: { 
+          en_US: 'Expansion', 
+          zh_CN: 'རྒྱས་བཤད།', 
+          bo: 'རྒྱས་བཤད།'
+        },
+        value: { 
+          en_US: 'Expansion', 
+          zh_CN: 'རྒྱས་བཤད།', 
+          bo: 'རྒྱས་བཤད།'
+        },
       },
       {
-        label: { en_US: 'Polish', zh_CN: '润色', ru_RU: 'Полировать' },
-        value: { en_US: 'Polish', zh_CN: '润色', ru_RU: 'Полировать' },
+        label: { 
+          en_US: 'Polish', 
+          zh_CN: 'ཞུ་དག', 
+          bo: 'ཞུ་དག'
+        },
+        value: { 
+          en_US: 'Polish', 
+          zh_CN: 'ཞུ་དག', 
+          bo: 'ཞུ་དག'
+        },
       },
       {
-        label: { en_US: 'Proofread', zh_CN: '校阅', ru_RU: 'Корректура' },
-        value: { en_US: 'Proofread', zh_CN: '校阅', ru_RU: 'Корректура' },
+        label: { 
+          en_US: 'Proofread', 
+          zh_CN: 'ཞིབ་བཤེར།', 
+          bo: 'ཞིབ་བཤེར།'
+        },
+        value: { 
+          en_US: 'Proofread', 
+          zh_CN: 'ཞིབ་བཤེར།', 
+          bo: 'ཞིབ་བཤེར།'
+        },
       },
       {
-        label: { en_US: 'Translate', zh_CN: '翻译', ru_RU: 'Перевести' },
+        label: { 
+          en_US: 'Translate', 
+          zh_CN: 'ཡིག་སྒྱུར།', 
+          bo: 'ཡིག་སྒྱུར།'
+        },
         value: {
           en_US: 'Translate to chinese',
-          zh_CN: '翻译成英文',
-          ru_RU: 'Перевести на китайский',
+          zh_CN: 'དབྱིན་ཡིག་ཏུ་བསྒྱུར།',
+          bo: 'དབྱིན་ཡིག་ཏུ་བསྒྱུར།'
         },
         autoSend: false,
       },
     ],
-  },
-  echarts: {
-    isRelative: false, //相对还是绝对路径 true 相对路径  false 绝对路径
-    cdnUrl: '', //cdn的地址路径
-    filePath: '', //文件路径  cdn+filepath 可以完整访问此 echarts脚本
-    mode: 1, //图表设置时，默认打开的模式 0 表示直接使用echarts的options json  源码模式   1：可视化模式，可以通过配置创建图表
-    haveImage: false, //是否生成图片 如果是则在图片展示的同时保存一张echart图片，主要用于复杂图形模式word无法生成但又要有类似效果场景
   },
   templates: [],
   cdnUrl: 'https://unpkg.com/@umoteam/editor-external@latest',
   shareUrl: location.href || '',
   diagrams: {
     domain: 'https://embed.diagrams.net',
-    // https://www.drawio.com/doc/faq/supported-url-parameters
-    params: {},
+    params: {
+      lang: 'bo',
+    },
   },
   file: {
     allowedMimeTypes: [],
     maxSize: 1024 * 1024 * 100, // 100M
     preview: [
-      { extensions: ['pdf'], url: '{url}' },
+      { 
+        extensions: ['pdf'], 
+        url: '{url}',
+        title: { 
+          en_US: 'PDF Preview',
+          zh_CN: 'PDF སྔོན་ལྟ།',
+          bo: 'PDF སྔོན་ལྟ།'
+        }
+      },
       {
         extensions: ['doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx'],
         url: 'https://view.officeapps.live.com/op/embed.aspx?src={{url}}&amp;wdStartOn=1&amp;wdPrint=0&amp;wdEmbedCode=0',
+        title: {
+          en_US: 'Office Preview',
+          zh_CN: 'གཞུང་ལས་ཡིག་ཆ་སྔོན་ལྟ།',
+          bo: 'གཞུང་ལས་ཡིག་ཆ་སྔོན་ལྟ།'
+        }
       },
     ],
   },
@@ -485,42 +566,37 @@ const defaultOptions: UmoEditorOptions = {
   translations: {
     en_US: {},
     zh_CN: {},
-    ru_RU: {},
+    bo: {},
   },
   async onSave() {
     return await new Promise((_, reject) => {
-      reject(new Error('Key "onSave": Please set the save method'))
+      reject(new Error('ཉར་ཚགས་བྱེད་ཐབས་སྒྲིག་འགོད་བྱེད་རོགས།'))
     })
   },
   async onFileUpload(file: File) {
     return await new Promise((_, reject) => {
       if (!file) {
-        reject(new Error('File not found'))
+        reject(new Error('ཡིག་ཆ་རྙེད་མ་བྱུང་།'))
         return
       }
-      reject(new Error('Key "onFileUpload": Please set the upload method'))
+      reject(new Error('ཡར་འཇུག་བྱེད་ཐབས་སྒྲིག་འགོད་བྱེད་རོགས།'))
     })
   },
   onFileDelete() {
     console.error(
-      'The file has been deleted. Please configure the onFileDelete to completely delete the file from the server.',
+      'ཡིག་ཆ་བསུབས་ཟིན། ཡིག་ཆ་ཆ་ཚང་པོར་སུབ་པའི་ཆེད་དུ་ onFileDelete སྒྲིག་འགོད་བྱེད་རོགས།',
     )
   },
   async onAssistant() {
     return await new Promise((_, reject) => {
-      reject(new Error('Key "onAssistant": Please set the onAssistant method'))
+      reject(new Error('རོགས་རམ་བྱེད་ནུས་སྒྲིག་འགོད་བྱེད་རོགས།'))
     })
-  },
-  onCustomizeChartSettings() {
-    console.error(
-      'Custom chart settings are required, please configure onCustomizeChartSettings.',
-    )
   },
   async onCustomImportWordMethod() {
     return await new Promise((_, reject) => {
       reject(
         new Error(
-          'Key "onCustomImportWordMethod": Please set the onAssistant method',
+          'Word ནང་འདྲེན་བྱེད་ཐབས་སྒྲིག་འགོད་བྱེད་རོགས།',
         ),
       )
     })
@@ -536,7 +612,7 @@ const isLocale = (value: unknown) => {
   }
   if (isRecord(value)) {
     for (const key of Object.keys(value)) {
-      if (!['en_US', 'zh_CN', 'ru_RU'].includes(key)) {
+      if (!['en_US', 'zh_CN', 'bo'].includes(key)) {
         return false
       }
     }
@@ -554,9 +630,9 @@ const ojbectSchema = new ObjectSchema({
   locale: {
     merge: 'replace',
     validate(value) {
-      if (value && !['en-US', 'zh-CN', 'ru-RU'].includes(value)) {
+      if (value && !['en-US', 'zh-CN', 'bo'].includes(value)) {
         throw new Error(
-          'Key "locale": must be one of "en-US", "zh-CN" or "ru-RU".',
+          'Key "locale": must be one of "en-US", "zh-CN" or "bo".',
         )
       }
     },
@@ -946,6 +1022,11 @@ const ojbectSchema = new ObjectSchema({
         validate: 'boolean',
         required: false,
       },
+      // enableComment: {
+      //   merge: 'replace',
+      //   validate: 'boolean',
+      //   required: false,
+      // },
       readOnly: {
         merge: 'replace',
         validate: 'boolean',
@@ -1055,38 +1136,6 @@ const ojbectSchema = new ObjectSchema({
       },
     },
   },
-  echarts: {
-    merge: 'replace',
-    validate: 'object',
-    required: false,
-    schema: {
-      isRelative: {
-        merge: 'replace',
-        validate: 'boolean',
-        required: false,
-      },
-      cdnUrl: {
-        merge: 'replace',
-        validate: 'string',
-        required: false,
-      },
-      filePath: {
-        merge: 'replace',
-        validate: 'string',
-        required: false,
-      },
-      mode: {
-        merge: 'replace',
-        validate: 'number',
-        required: false,
-      },
-      haveImage: {
-        merge: 'replace',
-        validate: 'boolean',
-        required: false,
-      },
-    },
-  },
   shareUrl: {
     merge: 'replace',
     validate: 'string',
@@ -1175,7 +1224,18 @@ const ojbectSchema = new ObjectSchema({
   },
   translations: {
     merge: 'replace',
-    validate: 'object',
+    validate(value) {
+      if (!isRecord(value)) {
+        throw new Error('Key "translations": must be an object.')
+      }
+      for (const key of Object.keys(value)) {
+        if (!['en_US', 'zh_CN', 'bo'].includes(key)) {
+          throw new Error(
+            'Key "translations": language code must be one of "en_US", "zh_CN" or "bo".',
+          )
+        }
+      }
+    },
     required: false,
   },
   onSave: {
@@ -1201,15 +1261,6 @@ const ojbectSchema = new ObjectSchema({
     validate(value: any) {
       if (!isFunction(value)) {
         throw new Error('Key "onFileDelete" must be a function.')
-      }
-    },
-    required: false,
-  },
-  onCustomizeChartSettings: {
-    merge: 'replace',
-    validate(value: any) {
-      if (!isFunction(value)) {
-        throw new Error('Key "onCustomizeChartSettings" must be a function.')
       }
     },
     required: false,
